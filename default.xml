@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote name="xilinx"  fetch="https://github.com/Xilinx"/>
+  <remote name="kondor"  fetch="ssh://saizen408@github.com/saizen408"/>
 
   <default sync-j="4"/>
 
-  <project remote="xilinx"  revision="rel-v2023.2"      name="yocto-scripts"            path="sources/yocto-scripts">
+  <project remote="xilinx"  revision="rel-v2023.2"        name="yocto-scripts"            path="sources/yocto-scripts">
        <copyfile dest="setupsdk" src="setupsdk"/>
   </project>
   <project remote="xilinx"    revision="rel-v2023.2"      name="yocto-manifests"          path="sources/manifest"/>
@@ -30,4 +31,6 @@
   <project remote="xilinx"    revision="rel-v2023.2"      name="meta-system-controller"   path="sources/meta-system-controller"/>
   <project remote="xilinx"    revision="rel-v2023.2"      name="meta-vitis"               path="sources/meta-vitis"/>
   <project remote="xilinx"    revision="rel-v2023.2"      name="meta-rauc"                path="sources/meta-rauc"/>
+  
+  <project remote="kondor"    revision="langdale"         name="meta-kondor-bsp"          path="sources/meta-kondor-bsp"/>
 </manifest>
