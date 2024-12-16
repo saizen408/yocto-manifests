@@ -5,9 +5,6 @@
 
   <default sync-j="4"/>
 
-  <project remote="xilinx"  revision="rel-v2024.2"      name="yocto-scripts"            path="sources/yocto-scripts">
-       <copyfile dest="setupsdk" src="setupsdk"/>
-  </project>
   <project remote="xilinx"    revision="rel-v2024.2"      name="yocto-manifests"          path="sources/manifest"/>
   <project remote="xilinx"    revision="rel-v2024.2"      name="meta-xilinx"              path="sources/meta-xilinx"	sync-s="true"/>
   <project remote="xilinx"    revision="rel-v2024.2"      name="meta-xilinx-tools"        path="sources/meta-xilinx-tools"/>
@@ -35,5 +32,7 @@
   <project remote="xilinx"    revision="rel-v2024.2"      name="meta-vitis"               path="sources/meta-vitis"/>
   <project remote="xilinx"    revision="rel-v2024.2"      name="meta-amd-adaptive-socs"   path="sources/meta-amd-adaptive-socs"/>
 
-  <project remote="meta-kondor-bsp"    revision="scarthgap"         name="meta-kondor-bsp"          path="sources/meta-kondor-bsp"/>
+  <project remote="meta-kondor-bsp"    revision="scarthgap"         name="meta-kondor-bsp"          path="sources/meta-kondor-bsp">
+    <copyfile dest="setupsdk" src="yocto-scripts/setupsdk"/>
+  </project>
 </manifest>
