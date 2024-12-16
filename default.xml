@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote name="xilinx"  fetch="https://github.com/Xilinx"/>
-  <remote name="meta-kondor-bsp"  fetch="ssh://saizen408@github.com/saizen408"/>
+  <remote name="meta-kondor-bsp"  fetch="ssh://git@github.com/saizen408"/>
 
   <default sync-j="4"/>
 
