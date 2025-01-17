@@ -2,6 +2,7 @@
 <manifest>
   <remote name="xilinx"  fetch="https://github.com/Xilinx"/>
   <remote name="meta-kondor-bsp"  fetch="ssh://git@github.com/saizen408"/>
+  <remote name="system-device-tree-xlnx"  fetch="ssh://git@github.com/saizen408"/>
 
   <default sync-j="4"/>
 
@@ -31,8 +32,9 @@
   <project remote="xilinx"    revision="rel-v2024.2"      name="meta-system-controller"   path="sources/meta-system-controller"/>
   <project remote="xilinx"    revision="rel-v2024.2"      name="meta-vitis"               path="sources/meta-vitis"/>
   <project remote="xilinx"    revision="rel-v2024.2"      name="meta-amd-adaptive-socs"   path="sources/meta-amd-adaptive-socs"/>
-
-  <project remote="meta-kondor-bsp"    revision="scarthgap"         name="meta-kondor-bsp"          path="sources/meta-kondor-bsp">
+  
+  <project remote="system-device-tree-xlnx"    revision="xlnx_rel_v2024.2"      name="system-device-tree-xlnx"   path="sources/system-device-tree-xlnx"/>
+  <project remote="meta-kondor-bsp"            revision="scarthgap"             name="meta-kondor-bsp"           path="sources/meta-kondor-bsp">
     <copyfile dest="setupsdk" src="yocto-scripts/setupsdk"/>
   </project>
 </manifest>
